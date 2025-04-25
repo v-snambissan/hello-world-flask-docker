@@ -5,7 +5,7 @@ app = Flask(__name__)
 def hello():
     return "Hello, World from Container!"
 
-@app.route('/health')
+@app.route('/action/health')
 def health():
     return "Hello, World from Container is healthy!!!"
 
