@@ -3,11 +3,11 @@ app = Flask(__name__)
 
 @app.route('/')
 def hello():
-    return "Hello, World from Container!"
+    return "Hello, World from Container!!"
 
 @app.route('/health')
 def hello():
-    return "Hello, World from Container is healthy!"
+    return "Hello, World from Container is healthy!!"
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=80)
