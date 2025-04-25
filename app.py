@@ -3,7 +3,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def hello():
-    return "Hello, World from Container!"
+    return "Hello, World from Container!", 200
 
 @app.route('/action/health')
 def health():
