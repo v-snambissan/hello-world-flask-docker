@@ -15,4 +15,4 @@ COPY . .
 EXPOSE 5000
 
 # Run the app
-CMD ["gunicorn", "-w", "4", "-b", "https://sn-alerts-test.internal.wonderfulrock-f762b7f0.centralindia.azurecontainerapps.io", "app:app"]
+CMD ["gunicorn", "-w", "4", "-b", "0.0.0.0:5000", "app:app"]
